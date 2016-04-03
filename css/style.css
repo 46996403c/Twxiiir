@@ -1,0 +1,59 @@
+body{
+    background-color: #12bf24;
+}
+.chatbox{
+    list-style: none;
+}
+#user {
+    background-color: #12bf24;
+    border:none;
+}
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+    display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: #cbee1e;
+    cursor: pointer;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+    color: #333;
+    background: #2179cc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0;
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+    height: auto;
+    opacity: 1;
+}
+#labelSpoiler{
+    text-align: center;
+}
+#labelSpoiler2{
+    text-align: center;
+}
+#twettsTitulo{
+    font-weight: 900;
+    font-size: 30px;
+}
+#goTop{
+    background: #ffc70b;
+    padding:5px;
+    position:fixed;
+    top:-100px;
+    right:10px;
+    cursor: pointer;
+}
